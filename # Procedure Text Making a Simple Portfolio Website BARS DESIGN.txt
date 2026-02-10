@@ -1,0 +1,261 @@
+# Procedure Text: Making a Simple Portfolio Website
+**Teks Prosedur:** Membuat Website Portfolio HTML Sederhana
+
+## **Title:** How to Create a Basic Portfolio Website
+**Judul:** Cara Membuat Website Portfolio HTML Dasar
+
+## **Purpose:**
+This procedure text provides step-by-step instructions for creating a simple yet professional portfolio website using HTML, CSS, and JavaScript. The purpose is to help beginners understand the fundamental process of building a personal portfolio to showcase their work, skills, and contact information online.
+**Teks prosedur ini memberikan petunjuk langkah demi langkah untuk membuat website portfolio yang sederhana namun profesional menggunakan HTML, CSS, dan JavaScript. Tujuannya adalah untuk membantu pemula memahami proses fundamental dalam membangun portfolio pribadi untuk menampilkan pekerjaan, keterampilan, dan informasi kontak mereka secara online.**
+
+## **Tools/Materials Required:**
+**Alat/Bahan yang Diperlukan:**
+1. **Computer/Laptop** with internet connection
+   **Komputer/Laptop** dengan koneksi internet
+2. **Text Editor/Code Editor** (VS Code, Sublime Text, Notepad++)
+   **Text Editor/Code Editor** (VS Code, Sublime Text, Notepad++)
+3. **Web Browser** (Google Chrome, Firefox, Edge)
+   **Web Browser** (Google Chrome, Firefox, Edge)
+4. **Image files** (profile photo, project screenshots)
+   **File gambar** (foto profil, screenshot proyek)
+5. **Font Awesome CDN** for icons
+   **Font Awesome CDN** untuk ikon
+6. **Google Fonts CDN** for typography
+   **Google Fonts CDN** untuk tipografi
+
+## **Step-by-Step Instructions:**
+**Instruksi Langkah demi Langkah:**
+
+### **Step 1: Project Setup**
+**Langkah 1: Persiapan Proyek**
+1. Create a new folder on your computer named "portfolio-website"
+   Buat folder baru di komputer Anda dengan nama "portfolio-website"
+2. Inside this folder, create three files:
+   Di dalam folder ini, buat tiga file:
+   - `index.html` (main HTML file)
+     `index.html` (file HTML utama)
+   - `style.css` (CSS stylesheet)
+     `style.css` (stylesheet CSS)
+   - `script.js` (JavaScript file)
+     `script.js` (file JavaScript)
+3. Create an "images" folder inside your main folder
+   Buat folder "images" di dalam folder utama
+4. Place all your images (profile photo, project screenshots) in the "images" folder
+   Tempatkan semua gambar Anda (foto profil, screenshot proyek) di folder "images"
+
+### **Step 2: Basic HTML Structure**
+**Langkah 2: Struktur HTML Dasar**
+1. Open `index.html` in your text editor
+   Buka `index.html` di text editor Anda
+2. Write the basic HTML5 structure:
+   Tulis struktur HTML5 dasar:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Website content will go here -->
+    <script src="script.js"></script>
+</body>
+</html>
+```
+
+### **Step 3: Add External Resources**
+**Langkah 3: Tambahkan Sumber Daya Eksternal**
+1. In the `<head>` section of your HTML, add:
+   Di bagian `<head>` HTML Anda, tambahkan:
+```html
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+```
+
+### **Step 4: Create Navigation Bar**
+**Langkah 4: Buat Navigation Bar**
+1. Inside the `<body>` tag, create a navigation section:
+   Di dalam tag `<body>`, buat bagian navigasi:
+```html
+<nav class="navbar">
+    <div class="logo">Your Name</div>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+```
+
+### **Step 5: Create Hero Section**
+**Langkah 5: Buat Hero Section**
+1. Add the hero/header section:
+   Tambahkan bagian hero/header:
+```html
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Hi, I'm <span>Your Name</span></h1>
+        <p>Your profession or tagline here</p>
+        <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+    <div class="hero-image">
+        <img src="images/profile.jpg" alt="Your Name">
+    </div>
+</section>
+```
+
+### **Step 6: Create About Section**
+**Langkah 6: Buat About Section**
+```html
+<section class="section" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+        <p>Write your introduction here...</p>
+        <div class="skills">
+            <!-- List your skills here -->
+        </div>
+    </div>
+</section>
+```
+
+### **Step 7: Create Portfolio Section**
+**Langkah 7: Buat Portfolio Section**
+```html
+<section class="section" id="portfolio">
+    <h2 class="section-title">My Projects</h2>
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="images/project1.jpg" alt="Project 1">
+            <h3>Project Title</h3>
+            <p>Project description...</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+</section>
+```
+
+### **Step 8: Create Contact Section**
+**Langkah 8: Buat Contact Section**
+```html
+<section class="section" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-form">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+```
+
+### **Step 9: Create Footer**
+**Langkah 9: Buat Footer**
+```html
+<footer>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+</footer>
+```
+
+### **Step 10: Style with CSS**
+**Langkah 10: Beri Gaya dengan CSS**
+1. Open `style.css` and add basic styling:
+   Buka `style.css` dan tambahkan gaya dasar:
+```css
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #333;
+    color: white;
+}
+
+/* Hero section styles */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+/* Add more CSS rules for each section */
+```
+
+### **Step 11: Add JavaScript Interactivity**
+**Langkah 11: Tambahkan Interaktivitas JavaScript**
+1. Open `script.js` and add:
+   Buka `script.js` dan tambahkan:
+```javascript
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+// Form submission handling
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your message!');
+    this.reset();
+});
+```
+
+### **Step 12: Testing and Optimization**
+**Langkah 12: Pengujian dan Optimasi**
+1. Open `index.html` in your web browser
+   Buka `index.html` di web browser Anda
+2. Test all links and buttons
+   Uji semua tautan dan tombol
+3. Check responsiveness on different screen sizes
+   Periksa responsivitas pada berbagai ukuran layar
+4. Validate HTML and CSS using online validators
+   Validasi HTML dan CSS menggunakan validator online
+5. Optimize images for web
+   Optimalkan gambar untuk web
+6. Test form submission
+   Uji pengiriman formulir
+
+### **Step 13: Deployment**
+**Langkah 13: Deployment (Penerapan)**
+1. Choose a hosting platform (GitHub Pages, Netlify, Vercel)
+   Pilih platform hosting (GitHub Pages, Netlify, Vercel)
+2. Upload your files to the hosting service
+   Unggah file Anda ke layanan hosting
+3. Configure custom domain (optional)
+   Konfigurasikan domain kustom (opsional)
+4. Test the live website
+   Uji website langsung
+5. Share your portfolio link
+   Bagikan tautan portfolio Anda
+
+## **Conclusion:**
+**Kesimpulan:**
+Creating a portfolio website is a systematic process that involves planning, coding, styling, and deployment. By following these steps, you can build a functional and attractive portfolio that showcases your skills and projects effectively. Remember to regularly update your portfolio with new projects and skills. The key elements of a successful portfolio include clear navigation, professional presentation of work, easy contact methods, and mobile responsiveness. With practice, you can enhance your portfolio with more advanced features like animations, interactive elements, and backend integration for the contact form.
+**Membuat website portfolio adalah proses sistematis yang melibatkan perencanaan, pengkodean, penataan gaya, dan penerapan. Dengan mengikuti langkah-langkah ini, Anda dapat membangun portfolio yang fungsional dan menarik yang menampilkan keterampilan dan proyek Anda secara efektif. Ingatlah untuk memperbarui portfolio Anda secara teratur dengan proyek dan keterampilan baru. Elemen kunci dari portfolio yang sukses termasuk navigasi yang jelas, presentasi pekerjaan yang profesional, metode kontak yang mudah, dan responsivitas seluler. Dengan latihan, Anda dapat meningkatkan portfolio Anda dengan fitur-fitur yang lebih canggih seperti animasi, elemen interaktif, dan integrasi backend untuk formulir kontak.**

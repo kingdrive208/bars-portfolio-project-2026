@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bars - Full Stack Developer | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-code logo-icon"></i>
+            <span>BARS</span>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact" class="nav-cta">Hire Me</a>
+        </div>
+        
+        <!-- Mobile Hamburger -->
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-nav" id="mobileNav">
+        <button class="close-menu" id="closeMenu">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="mobile-nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact" class="mobile-nav-cta">Hire Me</a>
+        </div>
+    </div>
+
+    <!-- Hero Section dengan Foto -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="particles" id="particles"></div>
+        
+        <div class="hero-left-container fade-in">
+            <!-- Profile Photo -->
+            <div class="profile-photo-container box-glow-effect">
+                <img src="images/SOFTWARE_ENGINEER-removebg-preview.png" alt="Akbar - Software Engineer" class="profile-photo">
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-badge">Software Engineer - Full Stack Developer</div>
+                <h1>Hi, I'm <span>Akbar</span></h1>
+                <div class="hero-subtitle">Building Digital Experiences</div>
+                <p>I specialize in creating modern, scalable web applications with cutting-edge technologies. With expertise in both frontend and backend development, I deliver complete solutions that drive business growth and user satisfaction.</p>
+                <div class="btn-container">
+                    <a href="#portfolio" class="btn box-glow-effect">
+                        <i class="fas fa-eye"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline box-glow-effect">
+                        <i class="fas fa-paper-plane"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-image fade-in">
+            <div class="code-container box-glow-effect float-animation">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <div class="code-dot red"></div>
+                        <div class="code-dot yellow"></div>
+                        <div class="code-dot green"></div>
+                    </div>
+                    <div class="code-title">portfolio.js</div>
+                </div>
+                <div class="code-content">
+                    <div class="code-line"><span class="line-number">1</span><span class="code-keyword">class</span> <span class="code-function">Developer</span> {</div>
+                    <div class="code-line"><span class="line-number">2</span>&nbsp;&nbsp;<span class="code-function">constructor</span>() {</div>
+                    <div class="code-line"><span class="line-number">3</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.<span class="code-var">name</span> = <span class="code-string">"Muhammad Akbar Setiawan"</span>;</div>
+                    <div class="code-line"><span class="line-number">4</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.<span class="code-var">majer</span> = <span class="code-string">"Software Engineer"</span>;</div>
+                    <div class="code-line"><span class="line-number">5</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.<span class="code-var">role</span> = <span class="code-string">"Full Stack Developer"</span>;</div>
+                    <div class="code-line"><span class="line-number">6</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.<span class="code-var">experience</span> = <span class="code-string">"1+ Years"</span>;</div></div>
+                    <div class="code-line"><span class="line-number">7</span>&nbsp;&nbsp;}</div>
+                    <div class="code-line"><span class="line-number">8</span>&nbsp;&nbsp;<span class="code-function">getSkills</span>() {</div>
+                    <div class="code-line"><span class="line-number">9</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> [</div>
+                    <div class="code-line"><span class="line-number">10</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"HTML"</span>, <span class="code-string">"Node.js"</span>, <span class="code-string">"Python"</span>,</div>
+                    <div class="code-line"><span class="line-number">11</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"CSS"</span>, <span class="code-string">"Javascript"</span>, <span class="code-string">"PHP"</span></div>
+                    <div class="code-line"><span class="line-number">12</span>&nbsp;&nbsp;&nbsp;&nbsp;];</div>
+                    <div class="code-line"><span class="line-number">13</span>&nbsp;&nbsp;}</div>
+                    <div class="code-line"><span class="line-number">14</span></div>
+                    <div class="code-line"><span class="line-number">15</span>&nbsp;&nbsp;<span class="code-comment">// Passionate about clean code & innovation</span></div>
+                    <div class="code-line"><span class="line-number">16</span>}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text fade-in">
+                <h3>Building Digital Solutions</h3>
+                <p>I'm a passionate Full Stack Developer with over 1 years of experience in creating end-to-end web applications. My journey in software development has equipped me with a comprehensive understanding of both client-side and server-side technologies.</p>
+                <p>I specialize in building scalable, high-performance applications using modern frameworks and best practices. My approach combines technical expertise with a deep understanding of user needs to create intuitive and powerful digital experiences.</p>
+                <p>Beyond coding, I'm passionate about technology trends, open-source contributions, and mentoring aspiring developers to grow in this ever-evolving field.</p>
+                
+                <div class="stats">
+                    <div class="stat-item box-glow-effect">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item box-glow-effect">
+                        <span class="stat-number">1+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item box-glow-effect">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item box-glow-effect">
+                        <span class="stat-number">80%</span>
+                        <span class="stat-label">Satisfaction Rate</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills">
+                <div class="skill-item fade-in box-glow-effect">
+                    <div class="skill-icon-container">
+                        <i class="fas fa-code"></i>
+                        <h4>Frontend Development</h4>
+                    </div>
+                    <p>React, Vue.js, Angular, HTML5, CSS3, JavaScript ES6+, TypeScript, Responsive Design, UI/UX Implementation</p>
+                </div>
+                <div class="skill-item fade-in box-glow-effect">
+                    <div class="skill-icon-container">
+                        <i class="fas fa-server"></i>
+                        <h4>Backend Development</h4>
+                    </div>
+                    <p>Node.js, Express, Python, Django, Flask, REST APIs, GraphQL, Microservices, Authentication & Authorization</p>
+                </div>
+                <div class="skill-item fade-in box-glow-effect">
+                    <div class="skill-icon-container">
+                        <i class="fas fa-database"></i>
+                        <h4>Database & DevOps</h4>
+                    </div>
+                    <p>MongoDB, PostgreSQL, MySQL, Redis, AWS, Docker, Kubernetes, CI/CD Pipelines, Git, Linux Server Management</p>
+                </div>
+                <div class="skill-item fade-in box-glow-effect">
+                    <div class="skill-icon-container">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Mobile & Others</h4>
+                    </div>
+                    <p>React Native, Progressive Web Apps (PWA), Performance Optimization, Security Best Practices, Agile/Scrum Methodology</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Stack Section -->
+        <div class="tech-stack">
+            <h3>My Tech Stack</h3>
+            <div class="tech-icons">
+                <div class="tech-icon fade-in box-glow-effect">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="tech-icon fade-in box-glow-effect">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-icon fade-in box-glow-effect">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-icon fade-in box-glow-effect">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-icon fade-in box-glow-effect">
+                    <i class="fab fa-vuejs"></i>
+                    <span>Vue.js</span>
+                </div>
+                <div class="tech-icon fade-in box-glow-effect">
+                    <i class="fas fa-database"></i>
+                    <span>MongoDB</span>
+                </div>
+                <div class="tech-icon fade-in box-glow-effect">
+                    <i class="fab fa-aws"></i>
+                    <span>AWS</span>
+                </div>
+                <div class="tech-icon fade-in box-glow-effect">
+                    <i class="fab fa-docker"></i>
+                    <span>Docker</span>
+                </div>
+                <div class="tech-icon fade-in box-glow-effect">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+                <div class="tech-icon fade-in box-glow-effect">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="tech-icon fade-in box-glow-effect">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="tech-icon fade-in box-glow-effect">
+                    <i class="fab fa-npm"></i>
+                    <span>npm</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section dengan Foto Project Asli -->
+    <section class="section" id="portfolio">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="portfolio-grid">
+            <!-- Project 1: Google Clone -->
+            <div class="portfolio-item fade-in box-glow-effect">
+                <div class="portfolio-img">
+                    <img src="images/Google Chrome Halaman Pertama GOOGLE.png" alt="Google Clone Project">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Google Search Clone</h3>
+                    <p>A fully functional Google homepage clone with search functionality, responsive design, and modern UI. Features include search input, Google logo, navigation links, and language options.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2: News Website -->
+            <div class="portfolio-item fade-in box-glow-effect">
+                <div class="portfolio-img">
+                    <img src="images/WEB BERITA NEWS.png" alt="News Website Project">
+                </div>
+                <div class="portfolio-info">
+                    <h3>News Portal Website</h3>
+                    <p>A modern news portal with categorized content, featured articles, and responsive layout. Includes news sections, latest updates, and clean typography for optimal reading experience.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Grid Layout</span>
+                        <span class="tag">Typography</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3: KFC Website -->
+            <div class="portfolio-item fade-in box-glow-effect">
+                <div class="portfolio-img">
+                    <img src="images/WEB KFC.png" alt="KFC Website Project">
+                </div>
+                <div class="portfolio-info">
+                    <h3>KFC Restaurant Website</h3>
+                    <p>Fast food restaurant website with menu display, promotional sections, and product showcase. Features include food categories, special offers, and visually appealing food photography.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Food Industry</span>
+                        <span class="tag">E-commerce</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4: Coffee Shop Website -->
+            <div class="portfolio-item fade-in box-glow-effect">
+                <div class="portfolio-img">
+                    <img src="images/WEB KOPI KENANGAN.png" alt="Coffee Shop Website">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Coffee Shop Website</h3>
+                    <p>Elegant coffee shop website with menu display, about section, and contact information. Features warm color scheme, product showcase, and inviting layout for cafe visitors.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Coffee Shop</span>
+                        <span class="tag">Menu Design</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 5: Login Form -->
+            <div class="portfolio-item fade-in box-glow-effect">
+                <div class="portfolio-img">
+                    <img src="images/WEB LOGIN.png"Login Form Project">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Modern Login Form</h3>
+                    <p>Clean and secure login interface with email/password fields, remember me option, and social login integration. Features form validation and responsive design for all devices.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Form Design</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 6: Survey Form -->
+            <div class="portfolio-item fade-in box-glow-effect">
+                <div class="portfolio-img">
+                    <img src="images/WEB SURVEY FORM.png" alt="Survey Form Project">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Interactive Survey Form</h3>
+                    <p>User-friendly survey form with multiple input types including text fields, radio buttons, and dropdowns. Features clear form structure and intuitive user interface.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Form Design</span>
+                        <span class="tag">User Input</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 7: School Website -->
+            <div class="portfolio-item fade-in box-glow-effect">
+                <div class="portfolio-img">
+                    <img src="images/WEB SMK TUNAS BANGSA.png" alt="School Website Project">
+                </div>
+                <div class="portfolio-info">
+                    <h3>SMK School Website</h3>
+                    <p>Comprehensive school website with information about programs, facilities, and registration. Features include navigation menu, hero section, and detailed content presentation.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Education</span>
+                        <span class="tag">Institutional</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 8: Auto Parts Store -->
+            <div class="portfolio-item fade-in box-glow-effect">
+                <div class="portfolio-img">
+                    <img src="images/WEB TOKO TIGA BERLIAN BAN.png" alt="Auto Parts Store Website">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Auto Parts Store Website</h3>
+                    <p>Automotive spare parts e-commerce website with product showcase, about section, and services. Features professional design suitable for automotive business.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Automotive</span>
+                        <span class="tag">E-commerce</span>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Project 9: Clock -->
+            <div class="portfolio-item fade-in box-glow-effect">
+                <div class="portfolio-img">
+                    <img src="images/WEB TIME CLOCK.png" alt="Clock Website">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Indonesia Time Clock</h3>
+                    <p>Time clock in Indonesia and in the city of Bandung with a 3D neon and moving design.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Form Design</span>
+                        <span class="tag">Grid Layout</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item fade-in box-glow-effect">
+                    <div class="contact-icon-container">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>barsm258@gmail.com</p>
+                        <p style="font-size: 0.9rem; color: var(--accent-color); margin-top: 5px;">Response within 24 hours</p>
+                    </div>
+                </div>
+                <div class="contact-item fade-in box-glow-effect">
+                    <div class="contact-icon-container">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p>+6282129254810</p>
+                        <p style="font-size: 0.9rem; color: var(--accent-color); margin-top: 5px;">Available 9AM-6PM EST</p>
+                    </div>
+                </div>
+                <div class="contact-item fade-in box-glow-effect">
+                    <div class="contact-icon-container">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>Remote - Available Worldwide</p>
+                        <p style="font-size: 0.9rem; color: var(--accent-color); margin-top: 5px;">Open to relocation</p>
+                    </div>
+                </div>
+                <div class="contact-item fade-in box-glow-effect">
+                    <div class="contact-icon-container">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Availability</h4>
+                        <p>Open for new projects</p>
+                        <p style="font-size: 0.9rem; color: var(--accent-color); margin-top: 5px;">Full-time / Contract</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form fade-in box-glow-effect">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Project Type</label>
+                        <input type="text" id="subject" placeholder="E.g., Web App, Mobile App, Consulting" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" rows="6" placeholder="Describe your project requirements, timeline, and budget..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <div class="social-icon-container whatsapp box-glow-effect">
+                    <a href="https://wa.me/+6282129154810" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <span class="social-label">WhatsApp</span>
+                </div>
+                <div class="social-icon-container tiktok box-glow-effect">
+                    <a href="https://www.tiktok.com/@bars8m?is_from_webapp=1&sender_device=pc" target="_blank" title="Tiktok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <span class="social-label">Tiktok</span>
+                </div>
+                <div class="social-icon-container instagram box-glow-effect">
+                    <a href="https://instagram.com/bars8m_x08" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <span class="social-label">Instagram</span>
+                </div>
+                <div class="social-icon-container linkedin box-glow-effect">
+                    <a href="https://linkedin.com/in/akbar" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <span class="social-label">LinkedIn</span>
+                </div>
+                <div class="social-icon-container github box-glow-effect">
+                    <a href="https://github.com/muhammadakbarsetiawan11-commits" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <span class="social-label">GitHub</span>
+                </div>
+                <div class="social-icon-container twitter box-glow-effect">
+                    <a href="https://twitter.com/akbar_dev" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <span class="social-label">Twitter</span>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Akbar - Software Engineer - Full Stack Developer. All rights reserved.</p>
+                <p style="margin-top: 10px; font-size: 0.8rem; color: var(--light-grey);">Designed with Deepseek<i class="fas fa-heart" style="color: var(--accent-color);"></i> and <i class="fas fa-code" style="color: var(--accent-color);"></i></p>
+            </div>
+        </div>
+        
+        <button class="back-to-top" id="backToTop">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
